@@ -6,7 +6,7 @@
   <title>Evan Peraza</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
      </div>
 
      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-         <img class="rounded-lg-3" src="static/yosemite-bg.jpeg" alt="hiker-in-mountain-yosemite" width="520" height="650">
+         <img class="rounded-lg-3" src="{{ url_for('static', filename='yosemite-bg.jpeg') }}" alt="hiker-in-mountain-yosemite" width="520" height="650">
     </div>
       <div class="col-md-6">
           <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -75,31 +75,25 @@
           </div>
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
-              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-                  <svg class="bi" width="30" height="24" aria-hidden="true">
-                      <use xlink:href="#bootstrap"></use>
-                  </svg>
-              </a>
               <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Evan P.</span>
           </div>
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-              <li class="ms-3">
-                  <a class="text-body-secondary" href="#" aria-label="Instagram">
-                  <svg class="bi" width="24" height="24" aria-hidden="true">
-                      <use xlink:href="#instagram"></use>
-                  </svg>
-              </a>
-              </li>
-              <li class="ms-3">
-                  <a class="text-body-secondary" href="#" aria-label="Facebook">
-                      <svg class="bi" width="24" height="24">
-                          <use xlink:href="#facebook"></use>
-                          </svg>
-                  </a>
-              </li>
-          </ul>
+<!--          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">-->
+<!--              <li class="ms-3">-->
+<!--                  <a class="text-body-secondary" href="#" aria-label="Instagram">-->
+<!--                  <svg class="bi" width="24" height="24" aria-hidden="true">-->
+<!--                      <use xlink:href="#instagram"></use>-->
+<!--                  </svg>-->
+<!--              </a>-->
+<!--              </li>-->
+<!--              <li class="ms-3">-->
+<!--                  <a class="text-body-secondary" href="#" aria-label="Facebook">-->
+<!--                      <svg class="bi" width="24" height="24">-->
+<!--                          <use xlink:href="#facebook"></use>-->
+<!--                          </svg>-->
+<!--                  </a>-->
+<!--              </li>-->
+<!--          </ul>-->
       </footer>
-
 
 </body>
 
